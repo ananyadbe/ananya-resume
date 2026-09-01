@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 Submission - Ananya Agrawal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ecf0f3;
+            color: #1e2125;
+            padding: 2.5rem 1rem;
+            line-height: 1.6;
+        }
+        .page {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border: 1px solid #dce1e8;
+            border-radius: 14px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        }
+        .doc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ff014f;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+            gap: 1.5rem;
+        }
+        .doc-title {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: #1e2125;
+            margin: 0 0 0.4rem 0;
+            letter-spacing: -0.5px;
+        }
+        .doc-subtitle {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #ff014f;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 0 1rem 0;
+        }
+        .student-header-photo {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top center;
+            border: 3px solid #ff014f;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            background: #f8fafc;
+            padding: 1.15rem 1.35rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin-bottom: 1.5rem;
+        }
+        .meta-item strong {
+            color: #1e2125;
+        }
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #1e2125;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.4rem;
+        }
+        ul {
+            padding-left: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.75rem;
+            font-size: 0.92rem;
+            color: #4b5563;
+        }
+        li strong {
+            color: #1e2125;
+        }
+        .repo-box {
+            background-color: #f1f5f9;
+            border: 1.5px dashed #94a3b8;
+            padding: 1.25rem;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 0.95rem;
+            color: #0f172a;
+            margin-top: 1rem;
+        }
+        .action-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .action-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.8rem;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 0.92rem;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.2s;
+        }
+        .print-btn {
+            background: #ff014f;
+            color: #fff;
+            box-shadow: 0 6px 16px rgba(255, 1, 79, 0.3);
+        }
+        .back-link-btn {
+            background: #ffffff;
+            color: #1e2125;
+            border: 1px solid #dce1e8;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+        }
+        @media print {
+            body { background: none; padding: 0; }
+            .page { border: none; box-shadow: none; padding: 0; }
+            .action-bar { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="action-bar">
+        <a href="index.html" class="action-btn back-link-btn">← Back to Resume Website</a>
+        <button class="action-btn print-btn" onclick="window.print()">🖨️ Save as PDF / Print Submission</button>
+    </div>
+    
+    <div class="page">
+        <div class="doc-header">
+            <div>
+                <h1 class="doc-title">ASSIGNMENT 2</h1>
+                <div class="doc-subtitle">RESUME WEBSITE – CSS ENHANCEMENT</div>
+            </div>
+            <img src="profile.jpeg" alt="Ananya Agrawal" class="student-header-photo">
+        </div>
+
+        <div class="meta-grid">
+            <div class="meta-item"><strong>Student:</strong> Ananya Agrawal</div>
+            <div class="meta-item"><strong>Institution:</strong> IIM Bangalore</div>
+            <div class="meta-item"><strong>Course:</strong> BBA (Digital Business &amp; Entrepreneurship)</div>
+            <div class="meta-item"><strong>Date:</strong> August 2026</div>
+        </div>
+
+        <h2>IMPROVEMENTS MADE</h2>
+        <p style="font-size: 0.95rem; color: #4b5563; margin-bottom: 1rem;">
+            The static HTML resume has been transformed into a modern, responsive personal resume website inspired by the InBio template design language for PC and mobile displays (100% Pure HTML5 &amp; CSS3):
+        </p>
+
+        <ul>
+            <li><strong>Neumorphic &amp; Soft Elevation Card Aesthetics:</strong> Crafted layered dual-directional drop shadows (<code>var(--shadow-neumorph)</code>) and inset shadows for metrics, portrait cards, and highlight sections.</li>
+            <li><strong>Integrated High-Resolution Student Portrait:</strong> Styled and embedded student portrait across the Hero showcase card, sticky navbar brand, Profile section frame, and contact cards.</li>
+            <li><strong>Pure CSS Sticky Navigation with Checkbox Drawer:</strong> Implemented <code>position: sticky; top: 0;</code> with backdrop blur and pure CSS <code>:checked</code> hamburger toggle for mobile devices.</li>
+            <li><strong>Consistent Modern Color Palette:</strong> Structured CSS variables (<code>:root</code>) featuring a light neutral background (<code>#ecf0f3</code>), deep slate headers (<code>#1e2125</code>), and vibrant coral red accent (<code>#ff014f</code>).</li>
+            <li><strong>Clean Montserrat Typography:</strong> Applied structured font weights (<code>400</code>, <code>600</code>, <code>700</code>, <code>800</code>) with refined letter-spacing for section titles and subtitles.</li>
+            <li><strong>CSS Grid Layouts for Key Strengths ("What I Do"):</strong> Designed a 3-column card grid with numeric indicators, descriptions, and interactive hover arrow animations (<code>↗</code>).</li>
+            <li><strong>CSS-Based Vertical Education Timeline:</strong> Implemented a vertical timeline with connecting gradient tracks, pulsating node markers, and institution cards.</li>
+            <li><strong>Class, ID, and Element Selectors:</strong> Organized code cleanly with HTML5 semantic elements, modular component classes (<code>.inbio-card</code>, <code>.chip-item</code>, <code>.btn-inbio-primary</code>), and section ID targets.</li>
+            <li><strong>Interactive Micro-Animations &amp; Hover Effects:</strong> Smooth card elevation on hover (<code>transform: translateY(-7px)</code>) and interactive button transitions.</li>
+            <li><strong>PC &amp; Mobile Responsive Adaptability:</strong> Complete responsiveness across 1440px desktop, 1024px tablet, and 768px/480px mobile viewports without horizontal scroll.</li>
+        </ul>
+
+        <h2>GITHUB REPOSITORY</h2>
+        <div class="repo-box">
+            GitHub Repository:<br>
+            <strong>[PASTE UPDATED GITHUB REPOSITORY LINK HERE]</strong>
+        </div>
+    </div>
+</body>
+</html>
